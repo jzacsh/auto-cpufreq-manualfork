@@ -3,6 +3,12 @@
 # auto-cpufreq-installer:
 # auto-cpufreq source code based installer
 
+# TODO(github.com/AdnanHodzic/auto-cpufreq/issues/196) fix
+printf \
+  'Sorry this installer is temporarily out of comission; for progress, follow:\n\t%s\n' \
+  'https://github.com/AdnanHodzic/auto-cpufreq/issues/196' >&2
+exit 1
+
 SCRIPT_PATH=$(readlink -f "$0")
 SCRIPT_DIR=$(dirname "${SCRIPT_PATH}")
 cd "${SCRIPT_DIR}"
